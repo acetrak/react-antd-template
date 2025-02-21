@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=darkAlgorithm], [data-theme=darkAlgorithm] *));
 
 @layer base {
   html{
@@ -10,7 +10,7 @@
 
   html[data-theme='darkAlgorithm']{
     --foreground-color:#fff;
-    --background-color: rgb(60, 60, 60)
+    --background-color: rgb(43, 43, 43)
   }
   
   
